@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Corporation{% endblock %}
+{% block content %}
+
+	<div id="page-wrap">
+
+        <h1><center>Corporation Form</center></h1>
+
+		<div id="contact-area">
+
+			<form method="post" action="">
+				<label for="Corporation">Corporation Name:</label>
+				<input type="text" name="corporation" id="corporation" />
+
+				<label for="ClinicKey">Clinic Key:</label>
+				<input type="text" name="clinickey" id="clinickey" />
+
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+
+			<div style="clear: both;"></div>
+            <p>Enter <a href="/branch">Branch Details</a></p>
+		</div>
+
+	</div>
+
+{% endblock %}
